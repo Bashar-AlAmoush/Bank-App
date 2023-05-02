@@ -27,7 +27,7 @@ let idd=state.accounts.length
 const handleDelete = (id) => {
     setState((state) => ({
       ...state,
-      accounts: state.accounts.filter((account) => (account.id === id)),
+      accounts: state.accounts.filter((account) => (account.id !== id)),
     }));
     
   };
@@ -169,8 +169,8 @@ submit
         <li className="list-group-item"> your account Type is : {e.accountType}</li>
         </ul>
      <div className="card-body">
-         
-<button type="submit" className="btn btn-danger mt-5 ms-5" onClick={handleDelete}>
+
+<button type="submit" className="btn btn-danger mt-5 ms-5"  onClick={() => handleDelete(e.id)} > 
 remove 
 </button>
        </div>

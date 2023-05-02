@@ -5,7 +5,7 @@ const Layout = () => {
 <nav className="navbar navbar-expand-lg bg-info-subtle">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
-      Navbar
+App-Banks
     </a>
     <button
       className="navbar-toggler"
